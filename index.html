@@ -17,12 +17,12 @@
         <a-asset-item id="spinosaurus" src="Untitled.glb"></a-asset-item>
       </a-assets>
     
-      <a-camera position="0.1 0.6 15"></a-camera>
+      <a-camera position="0 0 0"></a-camera>
     
       <!-- 2D environment omitted for simplicity -->
     
-      <a-entity id="dino"  scale="0.5 0.5 0.5">
-        <a-entity position="0 0 0" rotation="0 0 0"
+      <a-entity id="dino"  scale="0.5 0.5 0.5" camera-relative="position: 0 0 -2">
+        <a-entity
                   gltf-model="#spinosaurus"
                   animation-mixer
                   shadow="cast: true; receive: false"></a-entity>
